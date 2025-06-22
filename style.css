@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c3ecf7, #e0c3fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Main container */
+.container {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #4a148c;
+}
+
+/* Input Section */
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+input {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 60%;
+}
+
+input:focus {
+  border-color: #7e57c2;
+  outline: none;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #7e57c2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #5e35b1;
+}
+
+/* List Styles */
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+li span {
+  flex: 1;
+  text-align: left;
+}
+
+li button {
+  background-color: #e53935;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #b71c1c;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
